@@ -8,3 +8,10 @@ export async function GET() {
 
   return Response.json({ data })
 }
+
+export async function POST(req) {
+  
+    const postedData = req.body
+
+  return Response.json({ postedData })
+}
