@@ -5,11 +5,9 @@ import { useSession } from "next-auth/react"
 export default function useInfo() {
     const session = useSession()
     return <div>
-        <section>
-            <p>
+        <p>
            {Json.stringify(session)} 
         </p>
-        </section>
 
     </div>
 }
