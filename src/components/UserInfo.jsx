@@ -4,8 +4,5 @@ import { useSession } from "next-auth/react"
 
 export default function useInfo() {
     const session = useSession()
-    return <div>
-        <section></section>
-
-    </div>
+    return session.data?.user ?? null
 }
