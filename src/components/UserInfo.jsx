@@ -6,7 +6,9 @@ export default function useInfo() {
     const session = useSession()
     return <div>
         <section>
-            
+            <p>
+           {Json.stringify(session)} 
+        </p>
         </section>
 
     </div>
