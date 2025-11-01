@@ -6,7 +6,7 @@ export default function useInfo() {
     const session = useSession()
     return <div>
         <p>
-            {Json.stringify(session)}
+            
         </p>
 
     </div>
